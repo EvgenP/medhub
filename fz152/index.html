@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <!--*TITLE*-->
+    <title>МедХаб | Положение об обработке персональных данных</title>
+
+    <!--*META*-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Социальное СМИ о медицине МедХаб">
+    <meta name="Keywords" content="medhub, медхаб, медицинский портал, статьи, про медицину, по медицине, med, hub, медицинские, перевод, новости медицины" />
+    <meta name="author" content="Medhub Team" />
+    <meta name="copyright" content="Medhub" />
+
+    <!--Помогаем Google определить месторасположение, а так же другую контактную информацию.-->
+    <meta property="business:contact_data:email" content="info@medhub.pro" />
+    <meta property="business:contact_data:website" content="https://medhub.pro/" />
+
+    <!--Open Graph-->
+    <meta name="og:title" content="MEDHUB" />
+    <meta name="og:type" content="website" />
+    <meta name="og:url" content="https://medhub.pro/" />
+    <meta name="og:site_name" content="MEDHUB" />
+    <meta name="og:description" content="Социальное СМИ о медицине МедХаб" />
+
+    <meta name="og:email" content="info@medhub.pro" />
+
+    <meta property="og:image" content="https://medhub.pro/img/social-image.png" /><!-- .svg, .png, .jpg, .WebP -->
+    <meta property="og:image:type" content="image/png" /><!-- *MIME TYPE* "image/svg+xml", "image/png", "image/jpeg", "image/webp" -->
+
+    <!--Twitter-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MEDHUB">
+    <meta name="twitter:description" content="Социальное СМИ о медицине МедХаб">
+    <meta name="twitter:site" content="https://medhub.pro/">
+    <meta name="twitter:image" content="https://medhub.pro/img/social-image.png">
+
+    <!--*FAVICON*-->
+    <link rel="shortcut icon" href="/img/favicon.png"><!-- .ico, .png, .svg, .WebP -->
+
+
+    <!--*CASCADING STYLE SHEETS (CSS)*-->
+
+    <!--UIkit CSS-->
+    <link rel="stylesheet" href="/libs/UIkit/uikit.min.css">
+
+    <!--AnimateCSS-->
+    <link href="/libs/Animate-CSS/animate.min.css" rel="stylesheet">
+
+    <!--colours-->
+    <link href="/css/colours.css" rel="stylesheet">
+
+    <!--main custom CSS-->
+    <link href="/css/main.css" rel="stylesheet">
+
+
+    <!--*JAVA SCRIPT (JS)*-->
+
+    <!--VUEjs-->
+    <script src="/libs/Vue/vue.min.js"></script>
+
+    <!--AXIOS-->
+    <script src="/libs/axios/axios.min.js"></script>
+
+    <!--UIkit JS-->
+    <script src="/libs/UIkit/uikit.min.js"></script>
+
+    <!--Vue Toast Notification-->
+    <script src="/libs/VueToastNotification/vue-toast-notification.js"></script>
+    <link rel="stylesheet" href="/libs/VueToastNotification/theme-sugar.css">
+
+
+    <!--*ICONS*-->
+    <!--*UIkit Icons JS*-->
+    <script src="/libs/UIkit/uikit-icons.min.js"></script>
+    <script>
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(70716103, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+        });
+    </script>
+</head>
+<body>
+<div class="site" id="app">
+    <header class="site-header" id="top">
+    <section class="site-header_mainbar">
+      <div class="site-header_main u-container">
+
+
+        <div class="o-burger_component">
+          <button class="o-burger_btn" uk-toggle="target: #o-burger-slide">
+            <svg class="e-icon--burger-menu" data-icon-color="light" data-icon-hover="light" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48">
+              <title>Navigation Menu</title>
+              <use xlink:href="/img/icons/ic_menu.svg#icon-menu"></use>
+            </svg>
+          </button>
+
+          <div id="o-burger-slide" class="o-burger_content" uk-offcanvas="overlay: true">
+            <div class="o-burger_menu uk-offcanvas-bar mdl-shadow--2dp">
+              <button class="o-burger_menu-close uk-offcanvas-close" type="button" uk-close></button>
+              <h3 class="o-burger_menu-title">Навигация</h3>
+              <nav class="o-burger_nav">
+                <a href="/" class="o-burger_menu-item">Pro.спект</a>
+                <a href="/" class="o-burger_menu-item">Публикации</a>
+                <a href="/" class="o-burger_menu-item">Новости</a>
+                <a href="/" class="o-burger_menu-item">События</a>
+                <a href="/" class="o-burger_menu-item">Рубрики</a>
+                <a href="/" class="o-burger_menu-item">Авторы</a>
+                <a href="/" class="o-burger_menu-item">Компании</a>
+                <a href="/" class="o-burger_menu-item">Приложения</a>
+              </nav>
+            </div>
+          </div>
+
+        </div>
+
+
+        <a href="/" class="site-header_logo wr-img">
+          <img class="site-header_logo-pic" src="/img/logo-main-w_medhub.svg" height="32" alt="логотип Medhub.Pro">
+        </a>
+
+        <a href="/" class="site-header_profile-link" data-icon-color="light" data-icon-hover="light" uk-tooltip="регистрация будет доступна чуть позже">
+          <span class="site-header_profile-label e-text--md">
+            Гость
+          </span>
+          <span class="mod-p-0">
+            <svg class="e-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48">
+              <path d="M24 24c4.42 0 8-3.59 8-8 0-4.42-3.58-8-8-8s-8 3.58-8 8c0 4.41 3.58 8 8 8zm0 4c-5.33 0-16 2.67-16 8v4h32v-4c0-5.33-10.67-8-16-8z" />
+            </svg>
+          </span>
+        </a>
+
+      </div>
+    </section>
+
+    <section class="site-header_navbar">
+      <div class="site-header_nav u-container">
+        <nav class="site-header_menu wr-links" aria-labelledby="site nav">
+          <a href="/" class="site-header_link active c-btn--main">
+            <span class="e-text">Pro.спект</span>
+          </a>
+          <a href="/" class="site-header_link c-btn--main">
+            <span class="e-text">Публикации</span>
+          </a>
+          <a href="/" class="site-header_link c-btn--main">
+            <span class="e-text">Новости</span>
+          </a>
+          <a href="/" class="site-header_link c-btn--main">
+            <span class="e-text">События</span>
+          </a>
+          <a href="/" class="site-header_link c-btn--main">
+            <span class="e-text">Рубрики</span>
+          </a>
+          <a href="/" class="site-header_link c-btn--main">
+            <span class="e-text">Авторы</span>
+          </a>
+          <a href="/" class="site-header_link c-btn--main">
+            <span class="e-text">Компании</span>
+          </a>
+          <a href="/" class="site-header_link c-btn--main">
+            <span class="e-text">Приложения</span>
+          </a>
+        </nav>
+      </div>
+    </section>
+
+  </header>
+    <main class="site-body">
+
+
+        <div class="page">
+
+            <header class="page-header">
+
+            </header>
+            <!--/.page-header-->
+
+            <div class="page-body u-container">
+
+                <div class="page-content">
+
+                    <div class="page-content_list">
+
+                        <article class="o-article">
+
+                            <div class="o-article_header e-text--md">
+
+                                <div class="o-article_header-content">
+
+
+                                    <a href="#"
+                                       class="o-article_category o-article_meta-item  c-btn--main e-text--bold">
+                                        <span class="o-article_category-label">Информация</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="o-article_body">
+                                <h2 class="o-article_title e-h3 tg-base--strong">
+                                    Политика в отношении обработки персональных данных
+                                </h2>
+
+                                <div class="o-article_content">
+                                    <ol class="o-info_order-list">
+                                        <li>
+                                            <h3>1. Общие положения</h3>
+                                            <p>
+                                                Настоящая политика обработки персональных данных составлена в
+                                                соответствии с требованиями Федерального закона от 27.07.2006. №152-ФЗ
+                                                «О персональных данных» и определяет порядок обработки персональных
+                                                данных и меры по обеспечению безопасности персональных данных,
+                                                предпринимаемые MedHub.Pro (далее – Оператор).
+                                            </p>
+                                            <ol>
+                                                <li>
+                                                    Оператор ставит своей важнейшей целью и условием осуществления своей
+                                                    деятельности соблюдение прав и свобод человека и гражданина при
+                                                    обработке его персональных данных, в том числе защиты прав на
+                                                    неприкосновенность частной жизни, личную и семейную тайну.
+                                                </li>
+                                                <li>
+                                                    Настоящая политика Оператора в отношении обработки персональных
+                                                    данных (далее – Политика) применяется ко всей информации, которую
+                                                    Оператор может получить о посетителях веб-сайта https://MedHub.Pro.
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <h3>2. Основные понятия, используемые в Политике</h3>
+                                            <ol>
+                                                <li>Автоматизированная обработка персональных данных – обработка
+                                                    персональных данных с помощью средств вычислительной техники;
+                                                </li>
+                                                <li>Блокирование персональных данных – временное прекращение обработки
+                                                    персональных данных (за исключением случаев, если обработка
+                                                    необходима для уточнения персональных данных);
+                                                </li>
+                                                <li>Веб-сайт – совокупность графических и информационных материалов, а
+                                                    также программ для ЭВМ и баз данных, обеспечивающих их доступность в
+                                                    сети интернет по сетевому адресу https://MedHub.Pro;
+                                                </li>
+                                                <li>Информационная система персональных данных — совокупность
+                                                    содержащихся в базах данных персональных данных, и обеспечивающих их
+                                                    обработку информационных технологий и технических средств;
+                                                </li>
+                                                <li>Обезличивание персональных данных — действия, в результате которых
+                                                    невозможно определить без использования дополнительной информации
+                                                    принадлежность персональных данных конкретному Пользователю или
+                                                    иному субъекту персональных данных;
+                                                </li>
+                                                <li>Обработка персональных данных – любое действие (операция) или
+                                                    совокупность действий (операций), совершаемых с использованием
+                                                    средств автоматизации или без использования таких средств с
+                                                    персональными данными, включая сбор, запись, систематизацию,
+                                                    накопление, хранение, уточнение (обновление, изменение), извлечение,
+                                                    использование, передачу (распространение, предоставление, доступ),
+                                                    обезличивание, блокирование, удаление, уничтожение персональных
+                                                    данных;
+                                                </li>
+                                                <li>Оператор – государственный орган, муниципальный орган, юридическое
+                                                    или физическое лицо, самостоятельно или совместно с другими лицами
+                                                    организующие и (или) осуществляющие обработку персональных данных, а
+                                                    также определяющие цели обработки персональных данных, состав
+                                                    персональных данных, подлежащих обработке, действия (операции),
+                                                    совершаемые с персональными данными;
+                                                </li>
+                                                <li>Персональные данные – любая информация, относящаяся прямо или
+                                                    косвенно к определенному или определяемому Пользователю веб-сайта
+                                                    https://MedHub.Pro;
+                                                </li>
+                                                <li>Пользователь – любой посетитель веб-сайта https://MedHub.Pro;</li>
+                                                <li>Предоставление персональных данных – действия, направленные на
+                                                    раскрытие персональных данных определенному лицу или определенному
+                                                    кругу лиц;
+                                                </li>
+                                                <li>Распространение персональных данных – любые действия, направленные
+                                                    на раскрытие персональных данных неопределенному кругу лиц (передача
+                                                    персональных данных) или на ознакомление с персональными данными
+                                                    неограниченного круга лиц, в том числе обнародование персональных
+                                                    данных в средствах массовой информации, размещение в
+                                                    информационно-телекоммуникационных сетях или предоставление доступа
+                                                    к персональным данным каким-либо иным способом;
+                                                </li>
+                                                <li>Трансграничная передача персональных данных – передача персональных
+                                                    данных на территорию иностранного государства органу власти
+                                                    иностранного государства, иностранному физическому или иностранному
+                                                    юридическому лицу;
+                                                </li>
+                                                <li>Уничтожение персональных данных – любые действия, в результате
+                                                    которых персональные данные уничтожаются безвозвратно с
+                                                    невозможностью дальнейшего восстановления содержания персональных
+                                                    данных в информационной системе персональных данных и (или)
+                                                    уничтожаются материальные носители персональных данных.
+                                                </li>
+                                            </ol>
+                                        </li>
+
+                                        <li>
+                                            <h3>3. Оператор может обрабатывать следующие персональные данные
+                                                Пользователя</h3>
+                                            <ol>
+                                                <li>Фамилия, имя, отчество;</li>
+                                                <li>Электронный адрес;</li>
+                                                <li>Год, месяц, дата и место рождения;</li>
+                                                <li>Сведения об образовании, профессии, специальности и квалификации,
+                                                    реквизиты документов об образовании;
+                                                </li>
+                                                <li>Также на сайте происходит сбор и обработка обезличенных данных о
+                                                    посетителях (в т.ч. файлов «cookie») с помощью сервисов
+                                                    интернет-статистики (Яндекс Метрика и Гугл Аналитика и других).
+                                                </li>
+                                                <li>Вышеперечисленные данные далее по тексту Политики объединены общим
+                                                    понятием Персональные данные.
+                                                </li>
+                                            </ol>
+                                        </li>
+
+                                        <li>
+                                            <h3>4. Цели обработки персональных данных</h3>
+                                            <ol>
+                                                <li>Цель обработки персональных данных Пользователя — информирование
+                                                    Пользователя посредством отправки электронных писем; предоставление
+                                                    доступа Пользователю к сервисам, информации и/или материалам,
+                                                    содержащимся на веб-сайте.
+                                                </li>
+                                                <li>Также Оператор имеет право направлять Пользователю уведомления о
+                                                    новых продуктах и услугах, специальных предложениях и различных
+                                                    событиях. Пользователь всегда может отказаться от получения
+                                                    информационных сообщений, направив Оператору письмо на адрес
+                                                    электронной почты info@MedHub.Pro с пометкой «Отказ от уведомлений о
+                                                    новых продуктах и услугах и специальных предложениях».
+                                                </li>
+                                                <li>Обезличенные данные Пользователей, собранные с помощью сервисов
+                                                    интернет-статистики, служат для сбора информации о действиях
+                                                    Пользователей на сайте, улучшения качества сайта и его содержания.
+                                                </li>
+                                            </ol>
+                                        </li>
+
+                                        <li>
+                                            <h3>5. Правовые основания обработки персональных данных</h3>
+                                            <ol>
+                                                <li>Оператор обрабатывает персональные данные Пользователя только в
+                                                    случае их заполнения и/или отправки Пользователем самостоятельно
+                                                    через специальные формы, расположенные на сайте https://MedHub.Pro.
+                                                    Заполняя соответствующие формы и/или отправляя свои персональные
+                                                    данные Оператору, Пользователь выражает свое согласие с данной
+                                                    Политикой.
+                                                </li>
+                                                <li>Оператор обрабатывает обезличенные данные о Пользователе в случае,
+                                                    если это разрешено в настройках браузера Пользователя (включено
+                                                    сохранение файлов «cookie» и использование технологии JavaScript).
+                                                </li>
+                                            </ol>
+                                        </li>
+
+                                        <li>
+                                            <h3>6. Порядок сбора, хранения, передачи и других видов обработки
+                                                персональных данных</h3>
+                                            <p>Безопасность персональных данных, которые обрабатываются Оператором,
+                                                обеспечивается путем реализации правовых, организационных и технических
+                                                мер, необходимых для выполнения в полном объеме требований действующего
+                                                законодательства в области защиты персональных данных.</p>
+                                            <ol>
+                                                <li>Оператор обеспечивает сохранность персональных данных и принимает
+                                                    все возможные меры, исключающие доступ к персональным данным
+                                                    неуполномоченных лиц.
+                                                </li>
+                                                <li>Персональные данные Пользователя никогда, ни при каких условиях не
+                                                    будут переданы третьим лицам, за исключением случаев, связанных с
+                                                    исполнением действующего законодательства.
+                                                </li>
+                                                <li>В случае выявления неточностей в персональных данных, Пользователь
+                                                    может актуализировать их самостоятельно, путем направления Оператору
+                                                    уведомление на адрес электронной почты Оператора info@MedHub.Pro с
+                                                    пометкой «Актуализация персональных данных».
+                                                </li>
+                                                <li>Срок обработки персональных данных является неограниченным.
+                                                    Пользователь может в любой момент отозвать свое согласие на
+                                                    обработку персональных данных, направив Оператору уведомление
+                                                    посредством электронной почты на электронный адрес Оператора
+                                                    info@MedHub.Pro с пометкой «Отзыв согласия на обработку персональных
+                                                    данных».
+                                                </li>
+                                            </ol>
+                                        </li>
+
+                                        <li>
+                                            <h3>7. Трансграничная передача персональных данных</h3>
+                                            <ol>
+                                                <li>Оператор до начала осуществления трансграничной передачи
+                                                    персональных данных обязан убедиться в том, что иностранным
+                                                    государством, на территорию которого предполагается осуществлять
+                                                    передачу персональных данных, обеспечивается надежная защита прав
+                                                    субъектов персональных данных.
+                                                </li>
+                                                <li>Трансграничная передача персональных данных на территории
+                                                    иностранных государств, не отвечающих вышеуказанным требованиям,
+                                                    может осуществляться только в случае наличия согласия в письменной
+                                                    форме субъекта персональных данных на трансграничную передачу его
+                                                    персональных данных и/или исполнения договора, стороной которого
+                                                    является субъект персональных данных.
+                                                </li>
+                                            </ol>
+                                        </li>
+
+                                        <li>
+                                            <h3>8. Заключительные положения</h3>
+                                            <ol>
+                                                <li>Пользователь может получить любые разъяснения по интересующим
+                                                    вопросам, касающимся обработки его персональных данных, обратившись
+                                                    к Оператору с помощью электронной почты info@MedHub.Pro.
+                                                </li>
+                                                <li>В данном документе будут отражены любые изменения политики обработки
+                                                    персональных данных Оператором. Политика действует бессрочно до
+                                                    замены ее новой версией.
+                                                </li>
+                                                <li>Актуальная версия Политики в свободном доступе расположена в сети
+                                                    Интернет по адресу https://MedHub.Pro.
+                                                </li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+
+                                </div>
+                            </div>
+                        </article><!-- /o-article -->
+
+
+                    </div><!-- /page-content_list -->
+
+
+                </div><!-- /page-content -->
+                <aside class="page-infobar">
+    <div class="page-infobar_content" uk-sticky="bottom: #offset; bottom: true; offset: 8;">
+
+        <div class="o-info-card">
+            <div class="o-info-card_content">
+                <h2 class="o-info-card_title e-h4">Новости</h2>
+                <ul class="c-list">
+                    <li class="c-list_item">
+                        <a href="#" class="c-list_link">
+                            <p class="tg-base--strong e-text--md">
+                                Сайт работает в тестовом режиме с ограничениями
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="o-info-card">
+            <div class="o-info-card_cover">
+                <img class="o-info-card_event-bg" src="/media/events/crownvir.jpeg" alt="изображение мероприятия">
+                <div class="o-info-card_bg-color"></div>
+            </div>
+            <div class="o-info-card_content o-info-card--event">
+                <div class="o-info-card_header">
+                    <h2 class="o-info-card_title e-h4">
+                        SPIE Medical Imaging 2021
+                    </h2>
+                </div>
+                <div class="o-info-card_body">
+                    <p class="o-info-card_desc">
+                        международная конференция по медицинской визуализации
+                    </p>
+                    <p class="0-info-card_event-time">
+                        14.02.2021
+                    </p>
+                    <a href="https://spie.org/conferences-and-exhibitions/medical-imaging" class="o-info-card_link" target="_blank">Узнать больше</a>
+                </div>
+                <div class="wtg-card_footer">
+                </div>
+            </div>
+        </div>
+
+        <div class="o-info-card">
+            <div class="o-info-card_content">
+                <h2 class="o-info-card_title e-h4 tg-base--strong">
+                    Лучшие авторы сообщества
+                </h2>
+                <ul class="c-list">
+                    <li class="c-list_item">
+                        <a href="#" class="c-list_link">
+                        <span class="tg-base--strong e-text--md mod-mb-0">
+                          Svetlana D.
+                        </span>
+                        </a>
+                    </li>
+                    <li class="c-list_item">
+                        <a href="#" class="c-list_link">
+                        <span class="tg-base--strong e-text--md mod-mb-0">
+                          Алексей Петров
+                        </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="o-info-card">
+            <div class="o-info-card_cover">
+                <img class="o-info-card_event-bg" src="/media/apps/evams.jpg" alt="изображение приложения">
+                <div class="o-info-card_bg-color"></div>
+            </div>
+            <div class="o-info-card_content o-info-card--event">
+                <div class="o-info-card_header">
+                    <h2 class="o-info-card_title e-h4">
+                        СВмс
+                    </h2>
+                </div>
+                <div class="o-info-card_body">
+                    <p class="o-info-card_desc">
+                        калькулятор расчета сосудистого возраста
+                    </p>
+                    <p class="0-info-card_event-time">
+                    </p>
+                    <a href="https://apps.medhub.pro/evams" class="o-info-card_link">Воспользоваться</a>
+                </div>
+                <div class="wtg-card_footer">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</aside>
+            </div>
+            <footer class="page-footer">
+
+            </footer>
+            <!--/.page-footer-->
+
+        </div>
+        <!--/.page-->
+
+
+    </main>
+    <footer class="site-footer">
+
+    <div class="site-footer_content u-container">
+
+      <div class="site-footer_mainbar">
+        <section class="site-footer_item">
+          <a class="site-footer_logo" href="/">
+            <img src="/img/logo-mini-w_medhub.svg" alt="medhub-logo-mini" class="e-logo--mini" height="64" width="64">
+          </a>
+        </section>
+        <section class="site-footer_item">
+          <h2 class="site-footer_title e-h5 tg-base--weak">
+            Навигация
+          </h2>
+          <nav class="site-footer_menu">
+            <a href="/" class="site-footer_link c-btn--main-rev">
+              Pro.спект
+            </a>
+            <a href="/" class="site-footer_link c-btn--main-rev">
+              Публикации
+            </a>
+            <a href="/" class="site-footer_link c-btn--main-rev">
+              Новости
+            </a>
+            <a href="/" class="site-footer_link c-btn--main-rev">
+              События
+            </a>
+            <a href="/" class="site-footer_link c-btn--main-rev">
+              Рубрики
+            </a>
+            <a href="/" class="site-footer_link c-btn--main-rev">
+              Авторы
+            </a>
+            <a href="/" class="site-footer_link c-btn--main-rev">
+              Компании
+            </a>
+            <a href="/" class="site-footer_link c-btn--main-rev">
+              Приложения
+            </a>
+          </nav>
+        </section>
+
+        <section class="site-footer_item">
+          <h2 class="site-footer_title e-h5 tg-base--weak">
+            Информация
+          </h2>
+          <nav class="site-footer_menu">
+            <a href="/about" class="site-footer_link c-btn--main-rev">
+              О проекте
+            </a>
+            <a href="/fz152" class="site-footer_link c-btn--main-rev">
+              Политика конфиденциальности
+            </a>
+            <a href="/agreement" class="site-footer_link c-btn--main-rev">
+              Правила использования
+            </a>
+            <a href="/for-authors" class="site-footer_link c-btn--main-rev">
+              Авторам
+            </a>
+            <a href="/for-companies" class="site-footer_link c-btn--main-rev">
+              Компаниям
+            </a>
+          </nav>
+        </section>
+
+        <section class="site-footer_item">
+          <h2 class="site-footer_title e-h5 tg-base--weak">
+            Контакты
+          </h2>
+          <nav class="site-footer_menu">
+            <a href="mailto:feedback@medhub.pro" class="site-footer_link c-btn--main-rev" target="_blank">
+              Обратная связь
+            </a>
+              <a href="#modal-cookies" class="site-footer_link c-btn--main-rev" uk-toggle>
+                Cookies
+              </a>
+          </nav>
+        </section>
+      </div>
+
+      <div class="site-footer_social">
+        <a href="https://vk.com/medhubpro" class="site-footer_social-link" target="_blank">
+          <div class="e-icon--vk">
+            <svg id="icon-fb" role="img" height="32" width="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>VK</title>
+              <use xlink:href="/img/icons/vk.svg#icon-vk"></use>
+            </svg>
+          </div>
+        </a>
+        <a href="https://t.me/medhub_channel" class="site-footer_social-link" target="_blank">
+          <div class="e-icon--tg">
+            <svg id="icon-tg" role="img" height="32" width="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>Telegram</title>
+              <use xlink:href="/img/icons/telegram.svg#icon-tg"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+    </div><!-- /site-footer_content -->
+
+  </footer>
+</div>
+<script>
+    Vue.use(VueToast, {
+        position: 'top'
+    });
+</script>
+<script async src="/js/app.js"></script>
+<script async src="/js/main.js"></script>
+</body>
+</html>
